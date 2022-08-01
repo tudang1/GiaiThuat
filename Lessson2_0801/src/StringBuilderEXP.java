@@ -11,7 +11,7 @@ public class StringBuilderEXP {
         // thay thế tại vị trí, khoảng đầu cuối
         str.replace(2,5,"TU");
         System.out.println(str);
-        // đào ngược chuỗi 
+        // đào ngược chuỗi
         str.reverse();
         System.out.println(str);
     }
