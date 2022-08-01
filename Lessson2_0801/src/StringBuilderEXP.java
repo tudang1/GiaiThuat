@@ -8,5 +8,11 @@ public class StringBuilderEXP {
         //chèn vào vị trí xác định
         str.insert(2,"tu");
         System.out.println(str);
+        // thay thế tại vị trí, khoảng đầu cuối
+        str.replace(2,5,"TU");
+        System.out.println(str);
+        // đào ngược chuỗi 
+        str.reverse();
+        System.out.println(str);
     }
 }
