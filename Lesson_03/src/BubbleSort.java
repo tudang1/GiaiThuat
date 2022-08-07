@@ -27,8 +27,9 @@ public class BubbleSort {
                     arr[i+1] = temp;
                     sorted = false;
                 }
-                System.out.println(Arrays.toString(arr));
+
             }
+            System.out.println(Arrays.toString(arr));
         }
         return arr;
     }
