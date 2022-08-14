@@ -16,8 +16,9 @@ public class _509_Fibonacci_Number {
     }
 
     public static void main(String[] args) {
-        System.out.println(fib(5));
-        System.out.println(fibRecusion(5));
+//        System.out.println(fib(5));
+        System.out.println(fibRecusion(6));
+//        method(1);
     }
 
     //đệ quy
@@ -29,6 +30,7 @@ public class _509_Fibonacci_Number {
             // công thức đệ quy
             return fibRecusion(n-1) + fibRecusion(n-2);
         }
+
     }
     // tạo điều kiện dừng hợp lý
     public static void method(int count){
