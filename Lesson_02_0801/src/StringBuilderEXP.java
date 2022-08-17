@@ -9,7 +9,7 @@ public class StringBuilderEXP {
         str.insert(2,"tu");
         System.out.println(str);
         // thay thế tại vị trí, khoảng đầu cuối
-        str.replace(2,5,"TU");
+        str.replace(2,5,"TU323");
         System.out.println(str);
         // đào ngược chuỗi
         str.reverse();
