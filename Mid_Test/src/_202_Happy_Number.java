@@ -4,10 +4,10 @@ public class _202_Happy_Number {
     }
     public static int pow(int n){
 
-        return pow(temp);
+        return 0;
     }
 
     public static void main(String[] args) {
-       
+
     }
 }
