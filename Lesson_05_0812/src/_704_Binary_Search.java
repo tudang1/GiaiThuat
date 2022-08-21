@@ -24,9 +24,28 @@ public class _704_Binary_Search {
         }
         return -1;
     }
+    // binarySearch using Đệ Quy
+    public static int search2(int[] nums,int target){
+        return search2(nums,target,0,nums.length-1);
+    }
+    public static int search2(int[] nums,int target,int iLeft,int iRight){
+        // điều kiện dừng
+        if (iLeft > iRight){
+            return -1;
+        }
+        int iMid = (iLeft + iRight)/2;
+        if (nums[iMid] == target){
+            return iMid;
+        } else if (nums[iMid] < target) {
+            return search2(nums,target,iMid +1,iRight);
+        }else{
+            return search2(nums,target,iLeft,iMid -1);
+        }
+    }
 
     public static void main(String[] args) {
         int[] arr = {-1,0,3,5,9,12};
         System.out.println(search(arr,7));
+        System.out.println(search2(arr,7));
     }
 }
