@@ -16,6 +16,14 @@ public class Main {
         // giống nhau peek - element
         System.out.println("phần tử đầu tiên "+ queue.peek());
 
+        System.out.println("Xóa phần tử đầu "+ queue.remove());
+        queue.forEach(i -> System.out.print(i + "\t"));
+        System.out.println();
+
+        System.out.println("bỏ phần đầu của hàng đợi. Trả về null nếu hàng đợi trống. "+ queue.poll());
+        queue.forEach(i -> System.out.print(i + "\t"));
+        System.out.println();
+
         Deque<Integer> deque = new LinkedList<>();
         deque.add(5);
         deque.add(7);
