@@ -10,19 +10,30 @@ public class _232_Implement_Queue_using_Stacks {
     }
 
     public void push(int x) {
-        while(!st1.isEmpty()){
+        st1.push(x);
+    }
+    public int pop() {
+        while (!st1.isEmpty()){
+            // nếu st1 k trống thì sẽ POP và đồng thời thêm các ptu bị xóa vào st2
             st2.push(st1.pop());
         }
-        st1.push(x);
-        while(!st2.isEmpty()) st1.push(st2.pop());
-    }
-
-    public int pop() {
-        return st1.pop();
+        int temp = st2.pop();
+        while (!st2.isEmpty()){
+            // nếu st2 k trống thì sẽ POP và đồng thời thêm các ptu bị xóa vào st1
+            st1.push(st2.pop());
+        }
+        return temp;
     }
 
     public int peek() {
-        return st1.peek();
+        while (!st1.isEmpty()){
+            st2.push(st1.pop());
+        }
+        int temp = st2.peek();
+        while (!st2.isEmpty()){
+            st1.push(st2.pop());
+        }
+        return temp;
     }
 
     public boolean empty() {
