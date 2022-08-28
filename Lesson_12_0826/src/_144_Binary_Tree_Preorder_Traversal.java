@@ -24,8 +24,4 @@ public class _144_Binary_Tree_Preorder_Traversal {
 
         }
     }
-
-    public static void main(String[] args) {
-
-    }
 }
